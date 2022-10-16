@@ -1,5 +1,5 @@
 body {
-    background-color: #b4abb867;
+    background-color: #a3a9be33;
     font-size: 18px;
     font-family: 'Manrope', sans-serif;
 }
@@ -24,6 +24,10 @@ body {
     align-items: center;
 }
 
+.title__text {
+    font-size: 30px;
+    font-weight: 700;
+}
 .add {
     font-weight: 700;
 }
@@ -112,15 +116,20 @@ body {
 .btn__main__input {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 15px;
 }
 .btn__input {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: rgb(0, 0, 0);
-
+}
+.user__services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr minmax(auto, 30px);
+    place-items: center;
+    gap: 1px;
+    text-align: center;
+    margin-top: 25px;
+    padding: 0 20px;
+    font-size: 16px;
 }
 
 .aside{

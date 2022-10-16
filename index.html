@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/63af62a2b1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
@@ -25,23 +26,47 @@
                     </button>
                 </div>
             </div>
-                <div class="main__filters">
-                    <p>Сервисы:</p>
-                    <p style="text-align: center;">Цена <br>
-                        (&#8381; / Месяц)
-                    </p>
-                    <p>Дата оплаты:</p>
-                </div>
+            <div class="main__filters">
+                <p>Сервисы:</p>
+                <p style="text-align: center;">Цена <br>
+                    (&#8381; / Месяц)
+                </p>
+                <p>Дата оплаты:</p>
+            </div>
+            <form action="/" method="get">
                 <div class="main__input">
-                    <input class="service__input" type="text">
-                    <input class="price__input" type="text">
-                    <input class="date__input" type="text">
+                    <input type="text" class="service__input" type="text">
+                    <input type="number" class="price__input" type="text">
+                    <input type="number" name="da" class="date__input" type="text">
                     <div class="btn__main__input">
-                        <button class="btn__input succsess"></button>
-                        <button class="btn__input cross"></button>
+                        <button type="submit" class="btn__input succsess">
+                            <i class="fa-sharp fa-solid fa-check"></i>
+                        </button>
+                        <button type="removed" class="btn__input cross">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
                     </div>
                 </div>
+            </form>
+            <div class="user__services">
+                <div class="user__servises__name">
+                    <div class="user__servicess__img">
+                        <p>Youtube</p>
+                    </div>
                 </div>
+                <div class="user__servises__price">
+                    <p>199</p>
+                </div>
+                <div class="user__servises__data">
+                    <p>19</p>
+                </div>
+                <div class="user__servises__btn">
+                    <form action="">
+                        <button class="user__servises__btn__trash"><i class="fa-solid fa-trash"></i>
+                        </button>
+                    </form>
+            </div>
+            </div>
         </div>
         <aside class="aside">
             <div class="container__aside">
